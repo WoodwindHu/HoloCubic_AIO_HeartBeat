@@ -1,4 +1,11 @@
 # HoloCubic_AIO (All in one for HoloCubic)
+将lizcubic中的anniversary和heartbeat功能整合进了AIO。
+使用时注意修改'platformio.ini'中的各项配置，并且修改'src\app\anniversary\anniversary.cpp'中的read_config函数，修改纪念日的事件名（同时需要修改'src\app\anniversary\msyhbd_24.c'）和日期。
+### 致谢
+* LizCubic https://github.com/qingehao/LizCubic
+* HoloCubic_AIO https://github.com/ClimbSnail/HoloCubic_AIO
+下面是HoloCubic_AIO的readme
+# HoloCubic_AIO (All in one for HoloCubic)
 
 * 原作者的项目链接 https://github.com/peng-zhihui/HoloCubic
 * 本项目的地址 https://github.com/ClimbSnail/HoloCubic_AIO （最新版本）
