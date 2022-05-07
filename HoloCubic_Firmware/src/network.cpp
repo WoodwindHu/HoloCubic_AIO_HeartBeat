@@ -112,7 +112,7 @@ boolean Network::start_conn_wifi(const char *ssid, const char *password, const c
         Serial.println(F("Wifi connected!"));
     } else { // 校园网
         WiFi.begin(ssid);
-        // m_preDisWifiConnInfoMillis = millis();
+        m_preDisWifiConnInfoMillis = millis();
         while (WiFi.status() != WL_CONNECTED)
         {
             Serial.println("Trying to connect. Status is " + String(WiFi.status()));
