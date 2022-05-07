@@ -56,9 +56,9 @@ static void read_config(WT_Config *cfg)
     if (size == 0)
     {
         // 默认值
-        cfg->tianqi_addr = TIANQI_ADDR; //"北京";
-        cfg->tianqi_appid = TIANQI_APPID; //"68685863";
-        cfg->tianqi_appsecret =  TIANQI_APPSECRET; //"EP7Kw07V";
+        cfg->tianqi_addr = TIANQI_ADDR; 
+        cfg->tianqi_appid = TIANQI_APPID; 
+        cfg->tianqi_appsecret =  TIANQI_APPSECRET; 
         cfg->weatherUpdataInterval = 900000; // 天气更新的时间间隔900000(900s)
         cfg->timeUpdataInterval = 900000;    // 日期时钟更新的时间间隔900000(900s)
         write_config(cfg);

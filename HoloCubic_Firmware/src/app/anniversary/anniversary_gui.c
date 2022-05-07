@@ -137,8 +137,10 @@ void anniversary_gui_display_date(struct tm* target, int anniversary_day_count, 
     lv_label_set_text(txtLabel, event_name);
     lv_label_set_text(btnLabel, (anniversary_day_count<0)?"天了":"天");
     lv_label_set_text_fmt(dayLabel, "#ffa500 %02d#", (anniversary_day_count<0)?(-anniversary_day_count + 1):anniversary_day_count);
+    lv_obj_align(dayLabel, NULL, LV_ALIGN_CENTER, -10, 20);
     lv_label_set_text_fmt(targetDateLabel, "#FFFFFF %d年%d月%d日  星期%s#", target->tm_year, target->tm_mon, target->tm_mday,
                                                                             weekDayCh[target->tm_wday]);
+    lv_obj_align(targetDateLabel, NULL, LV_ALIGN_CENTER, 0, 70);
 }
 
 void anniversary_obj_del(void)
