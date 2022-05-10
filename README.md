@@ -1,4 +1,7 @@
 # HoloCubic_AIO_HeartBeat
+
+新版本更新在 https://github.com/WoodwindHu/HoloCubic_AIO
+
 将lizcubic中的anniversary和heartbeat功能整合进了AIO。
 使用时注意修改'platformio.ini'中的各项配置，并且修改'src\app\anniversary\anniversary.cpp'中的read_config函数，修改纪念日的事件名（同时需要修改'src\app\anniversary\msyhbd_24.c'）和日期。
 ### 致谢
